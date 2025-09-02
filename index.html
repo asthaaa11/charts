@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reports & Insights</title>
+  <link rel="stylesheet" href="reports.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>📑 Reports & Insights</h1>
+    <nav>
+      <button class="tab-btn active" data-tab="monthly">Monthly</button>
+      <button class="tab-btn" data-tab="yearly">Yearly</button>
+      <button class="tab-btn" data-tab="revenue">Revenue</button>
+      <button class="tab-btn" data-tab="performance">Performance</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Monthly -->
+    <section class="tab-content active" id="monthly">
+      <div class="card color">
+        <h2>📊 Monthly Statistics</h2>
+        <canvas id="monthlyChart"></canvas>
+      </div>
+    </section>
+
+    <!-- Yearly -->
+    <section class="tab-content" id="yearly">
+      <div class="card">
+        <h2>📅 Yearly Statistics</h2>
+        <canvas id="yearlyChart"></canvas>
+      </div>
+    </section>
+
+    <!-- Revenue -->
+    <section class="tab-content" id="revenue">
+      <div class="card">
+        <h2>💰 Revenue Dashboard</h2>
+        <canvas id="revenueChart"></canvas>
+      </div>
+    </section>
+
+    <!-- Officer Performance -->
+    <section class="tab-content" id="performance">
+      <div class="card">
+        <h2>👮 Officer Performance</h2>
+        <canvas id="performanceChart"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="reports.js"></script>
+</body>
+</html>
